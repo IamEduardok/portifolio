@@ -1,0 +1,338 @@
+
+/* Seção Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+  background-color: var(--corPrincipal);
+  text-align: center;
+  
+  
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-greeting {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+  font-family: var(--font-primary);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin: 0;
+  line-height: 1.2;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+}
+
+/* Seção Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--contrateCP);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    color: var(--color-primary); /* Use sua cor primária ou defina uma nova */
+  }
+
+  i {
+    line-height: 1;
+  }
+  
+}
+
+.social-link {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    padding: 1rem;
+  }
+
+  .hero-greeting {
+    font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+   .social-links {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-link {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+}
+
+
+.about-section {
+  background-color: var(--corPrincipal);
+  color: #fff;
+  padding: 3rem 1rem;
+
+  .highlight {
+    color: #a972ff;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #a972ff;
+    padding-bottom: 0.5rem;
+  }
+
+  .profile-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .intro {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .photo-space {
+      flex: 0 0 250px;
+      text-align: right;
+
+      .profile-photo {
+        max-width: 100%;
+        border-radius: 8px;
+        border-bottom: 2px solid #a972ff;
+      }
+    }
+  }
+
+  .skills-intro {
+    margin-top: 3rem;
+    color: #a972ff;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column; // <-- Aqui o ajuste para colocar um abaixo do outro
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .skills-column {
+
+   
+    h4 {
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .skill-item {
+        font-size: 2rem;
+        transition: transform 0.3s;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        &::after {
+          content: attr(title);
+          position: absolute;
+          bottom: -1.5rem;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #333;
+          color: #fff;
+          padding: 0.2rem 0.5rem;
+          font-size: 0.75rem;
+          border-radius: 4px;
+          white-space: nowrap;
+          opacity: 0;
+          transition: opacity 0.3s;
+          pointer-events: none;
+        }
+
+        &:hover::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .learn-more-btn {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid #a972ff;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+      background: #a972ff;
+      color: #000;
+    }
+  }
+}
+
+/* Seção Contato */
+.projects-section {
+  padding: 3rem 1rem;
+  background-color: #0a0612;
+  color: #fff;
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #a972ff;
+    display: inline-block;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(2px);
+      color: white;
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      color: #a972ff;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-subtitle {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-buttons {
+      display: flex;
+      gap: 1rem;
+
+      .btn {
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+        border: 1px solid #a972ff;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #a972ff;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.see-more-btn {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #a972ff;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+
+  &:hover {
+    background: #a972ff;
+    color: #000;
+  }
+
+  i {
+    margin-left: 0.5rem;
+  }
+}
+
+
+}
+

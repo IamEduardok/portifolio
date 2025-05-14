@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Cores base */
+  --color-black: #000000;
+  --color-gray: #5e5e5e;
+  --color-white: #ffffff;
+  --color-light-gray: #f3f3f3;
+
+  /* Cores principais do site */
+  --color-primary: #0078d4;     /* Azul Microsoft */
+  --color-secondary: #106ebe;
+  --corPrincipal: #11114e;
+  --contrateCP: #bfecff;
+
+  /* Tipografia */
+  --font-primary: 'Roboto', sans-serif;
+  --font-main: 'Segoe UI', Arial, sans-serif;
+
+  /* Espaçamentos */
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+}
+
+/* ==================== */
+/* ESTILOS GLOBAIS      */
+/* ==================== */
+
+body {
+  font-family: var(--font-primary);
+  margin: 0;
+  background-color: var(--color-light-gray);
+  
+}
+
+/* ==================== */
+/* CLASSES UTILITÁRIAS  */
+/* ==================== */
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-accent {
+  background-color: var(--color-secondary);
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

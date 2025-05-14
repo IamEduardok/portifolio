@@ -1,0 +1,88 @@
+/* navbar.component.scss */
+
+/* Estrutura principal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--corPrincipal);
+  border-bottom: 1px solid var(--color-light-gray);
+  font-family: var(--font-main);
+  
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: var(--color-light-gray);
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  color: var(--color-light-gray);
+  font-size: 0.95rem;
+  padding: 0.5rem 0;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--color-primary);
+    background-color: var(--color-light-gray);
+  }
+
+  &.active {
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+}
+
+.item-number {
+  color: var(--contrateCP);
+  font-weight: 400;
+}
+
+.separator {
+  color: var(--color-gray);
+  padding: 0 0.2rem;
+}
+
+.curriculum {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    
+    .item-label {
+      color: var(--color-white);
+    }
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: var(--spacing-md);
+  }
+  
+  .nav-items {
+    margin-top: var(--spacing-md);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
