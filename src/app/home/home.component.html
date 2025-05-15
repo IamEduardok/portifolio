@@ -1,5 +1,5 @@
 
-
+<!--  =============================== Header =============================== -->
 <section class="hero">
   <div class="hero-content">
     <h1 class="hero-greeting">my name is Eduardo</h1>
@@ -19,129 +19,184 @@
   </div>
 </section>
 
-<section class="about-section">
+
+
+
+<!--  =============================== About =============================== -->
+<section role="region" class="about-section" aria-labelledby="aboutHeading" aria-live="polite">
   <div class="container">
-    <h2 class="section-title"><span class="highlight">01.</span> Sobre Mim</h2>
-    
-    <div class="profile-container">
+    <div class="about-content">
       <!-- Texto à esquerda -->
-      <div class="intro">
-        <p><strong>Olá, eu sou o Eduardo, também conhecido como IamEduardo!</strong></p>
-        <p>Sou uma pessoa criativa, empática, com um toque non-sense e apaixonada por desenvolver experiências digitais. Desenvolvo projetos do zero, percorrendo todas as etapas do desenvolvimento, utilizando recursos modernos e amigáveis para os usuários.</p>
-        <p>Atuo como desenvolvedor Full Stack, com expertise em Front-end. Minhas habilidades incluem a implementação de layouts responsivos e acessíveis, a criação de APIs eficientes e a modelagem de bancos de dados.</p>
+      <div class="about-info">
+        <h1 id="aboutHeading" class="about-title">
+          <span>01.</span> Sobre Mim
+          <div class="line"></div>
+        </h1>
+        <p class="about-description">
+          Olá, eu sou o Eduardo, também conhecido como IamEduardo!<br /><br />
+          Sou uma pessoa criativa, empática, com um toque non-sense e apaixonada por desenvolver experiências digitais.
+          Desenvolvo projetos do zero, percorrendo todas as etapas do desenvolvimento, utilizando recursos modernos e
+          amigáveis para os usuários.<br /><br />
+          Atuo como desenvolvedor Full Stack, com expertise em Front-end. Minhas habilidades incluem a implementação de
+          layouts responsivos e acessíveis, a criação de APIs eficientes e a modelagem de bancos de dados.
+        </p>
+
+        <h2>Desenvolvedor com habilidades diversas/</h2>
+
+        <!-- Front-End -->
+        <ul class="tech-list">
+          <h4>Front-End:</h4>
+          <div class="content">
+            <div class="icon-container">
+              <i class="fab fa-js-square"></i>
+              <span class="icon-text">JavaScript</span>
+            </div>
+            <div class="icon-container">
+              <img src="assets/images/icons/typescript.svg" alt="TypeScript" class="icon-img" />
+              <span class="icon-text">TypeScript</span>
+            </div>
+            <div class="icon-container">
+              <i class="fab fa-angular"></i>
+              <span class="icon-text">Angular</span>
+            </div>
+            <div class="icon-container">
+              <i class="fab fa-react"></i>
+              <span class="icon-text">React</span>
+            </div>
+            <div class="icon-container">
+              <i class="fab fa-css3-alt"></i>
+              <span class="icon-text">CSS</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-bootstrap"></i>
+              <span class="icon-text">Bootstrap</span>
+            </div>
+            <div class="icon-container">
+              <img src="assets/images/icons/po-ui.svg" alt="PO-UI" class="icon-img" />
+              <span class="icon-text">PO-UI</span>
+            </div>
+          </div>
+        </ul>
+
+        <!-- Back-End -->
+        <ul class="tech-list">
+          <h4>Back-End:</h4>
+          <div class="content">
+            <div class="icon-container">
+              <i class="fab fa-node-js"></i>
+              <span class="icon-text">Node.js</span>
+            </div>
+            <div class="icon-container">
+              <i class="fas fa-database"></i>
+              <span class="icon-text">SQL</span>
+            </div>
+            <div class="icon-container">
+              <img src="assets/images/icons/c.svg" alt="Java" class="icon-img" />
+              <span class="icon-text">C</span>
+            </div>
+            <div class="icon-container">
+              <i class="fab fa-python"></i>
+              <span class="icon-text">Python</span>
+            </div>
+            <div class="icon-container">
+                <i class="fa-brands fa-java"></i>
+                <span class="icon-text">Java</span>
+                </div>
+          </div>
+        </ul>
+
+        <!-- Softwares -->
+        <ul class="tech-list">
+          <h4>Softwares e Plataformas:</h4>
+          <div class="content">
+            <div class="icon-container">
+              <i class="fab fa-git-alt"></i>
+              <span class="icon-text">Git</span>
+            </div>
+            <div class="icon-container">
+              <i class="fab fa-github"></i>
+              <span class="icon-text">GitHub</span>
+            </div>
+            <div class="icon-container">
+              <img src="assets/images/icons/microsoft-office.svg" alt="Office" class="icon-img" />
+              <span class="icon-text">Office</span>
+            </div>
+          </div>
+        </ul>
+
+        <!-- Sistemas Operacionais -->
+        <ul class="tech-list">
+          <h4>Sistemas Operacionais:</h4>
+          <div class="content">
+            <div class="icon-container">
+              <i class="fa-brands fa-windows"></i>
+              <span class="icon-text">Windows</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-linux"></i>
+              <span class="icon-text">Linux</span>
+            </div>
+          </div>
+        </ul>
+
+        <a routerLink="/sobre" class="about-button">Saiba mais</a>
       </div>
 
       <!-- Foto à direita -->
-      <div class="photo-space">
-        <img src="/portifolio/src/assets/images/foto.jpg" alt="Foto de Eduardo" class="profile-photo">
+      <div class="about-image">
+        <img src="assets/images/fotolike.jpg" alt="Foto de Eduardo" />
       </div>
     </div>
-
-    <h3 class="skills-intro">Desenvolvedor com habilidades diversas:</h3>
-
-    <div class="skills-container">
-      <!-- Front-End -->
-      <div class="skills-column">
-        <h4>Front-End:</h4>
-        <div class="skills-grid">
-          <div class="skill-item" title="JavaScript"><i class="fab fa-js-square"></i></div>
-          <div class="skill-item" title="TypeScript"><i class="fab fa-ts"></i></div>
-          <div class="skill-item" title="Angular"><i class="fab fa-angular"></i></div>
-          <div class="skill-item" title="React"><i class="fab fa-react"></i></div>
-          <div class="skill-item" title="CSS3"><i class="fab fa-css3-alt"></i></div>
-          <div class="skill-item" title="Bootstrap"><i class="fab fa-bootstrap"></i></div>
-          <div class="skill-item" title="PO-UI"><i class="fas fa-mobile-alt"></i></div>
-        </div>
-      </div>
-
-      <!-- Back-End -->
-      <div class="skills-column">
-        <h4>Back-End:</h4>
-        <div class="skills-grid">
-          <div class="skill-item" title="Node.js"><i class="fab fa-node-js"></i></div>
-          <div class="skill-item" title="SQL"><i class="fas fa-database"></i></div>
-          <div class="skill-item" title="C"><i class="fas fa-code"></i></div>
-          <div class="skill-item" title="Python"><i class="fab fa-python"></i></div>
-        </div>
-      </div>
-
-      <!-- Automação -->
-      <div class="skills-column">
-        <h4>Automação:</h4>
-        <div class="skills-grid">
-          <div class="skill-item" title="Excel Air"><i class="fas fa-file-excel"></i></div>
-        </div>
-      </div>
-
-      <!-- Softwares -->
-      <div class="skills-column">
-        <h4>Softwares & Plataformas:</h4>
-        <div class="skills-grid">
-          <div class="skill-item" title="Git"><i class="fab fa-git-alt"></i></div>
-          <div class="skill-item" title="GitHub"><i class="fab fa-github"></i></div>
-          <div class="skill-item" title="Microsoft Office"><i class="fab fa-microsoft"></i></div>
-        </div>
-      </div>
-
-      <!-- Sistemas Operacionais -->
-      <div class="skills-column">
-        <h4>Sistemas Operacionais:</h4>
-        <div class="skills-grid">
-          <div class="skill-item" title="Windows"><i class="fab fa-windows"></i></div>
-          <div class="skill-item" title="Linux"><i class="fab fa-linux"></i></div>
-        </div>
-      </div>
-    </div>
-
-    <a routerLink="/sobre" class="learn-more-btn">
-      Saiba mais <i class="fas fa-arrow-right"></i>
-    </a>
   </div>
 </section>
 
 
+
+
+
+<!--  =============================== Projects =============================== -->
 <section class="projects-section">
   <h2 class="section-title">Meus Projetos</h2>
 
   <div class="projects-grid">
     <!-- Projeto 1 -->
-    <div class="project-card" style="background-image: url('portifolio/src/assets/images/card1.png')">
+    <div class="project-card" style="background-image: url('assets/images/card1.png')">">
       <div class="overlay">
-        <h3 class="project-title">eatsome.</h3>
-        <p class="project-subtitle">Restaurante em ReactJS (Yelp API)</p>
+        <h3 class="project-title">Projeto</h3>
+        <p class="project-subtitle">blabla</p>
         <div class="project-buttons">
-          <a href="#" class="btn">Demo</a>
-          <a href="#" class="btn">More</a>
+          <a href="#" class="btn">Ver</a>
+          <a href="#" class="btn">Código</a>
         </div>
       </div>
     </div>
 
     <!-- Projeto 2 -->
-    <div class="project-card" style="background-image: url('portifolio/src/assets/images/card2.png')">
+    <div class="project-card" style="background-image: url('assets/images/card2.png')">
         <div class="overlay">
-        <h3 class="project-title">eatsome.</h3>
-        <p class="project-subtitle">Restaurante em ReactJS (Yelp API)</p>
+        <h3 class="project-title">Projeto</h3>
+        <p class="project-subtitle">blabla</p>
         <div class="project-buttons">
-          <a href="#" class="btn">Demo</a>
-          <a href="#" class="btn">More</a>
+          <a href="#" class="btn">Ver</a>
+          <a href="#" class="btn">Código</a>
         </div>
       </div>
     </div>
 
     <!-- Projeto 3 -->
-    <div class="project-card" style="background-image: url('/portifolio/src/assets/images/card3.png')">
+    <div class="project-card" style="background-image: url('assets/images/card3.png')">
         <div class="overlay">
-        <h3 class="project-title">eatsome.</h3>
-        <p class="project-subtitle">Restaurante em ReactJS (Yelp API)</p>
+        <h3 class="project-title">Projeto</h3>
+        <p class="project-subtitle">blabla</p>
         <div class="project-buttons">
-          <a href="#" class="btn">Demo</a>
-          <a href="#" class="btn">More</a>
+          <a href="#" class="btn">Ver</a>
+          <a href="#" class="btn">Código</a>
         </div>
       </div>
     </div>
 
     <!-- Projeto 4 -->
-    <div class="project-card" style="background-image: url('portifolio/src/assets/images/card4.png')">
+    <div class="project-card" style="background-image: url('assets/images/card4.png')">
         <div class="overlay">
         <h3 class="project-title">eatsome.</h3>
         <p class="project-subtitle">Restaurante em ReactJS (Yelp API)</p>

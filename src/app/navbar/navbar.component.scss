@@ -1,7 +1,6 @@
-/* navbar.component.scss */
-
-/* Estrutura principal */
 .navbar {
+  position: relative;
+  z-index: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,0 +1,147 @@
+.about-section {
+  background-color: var(--corPrincipal);
+  color: #fff;
+  padding: 4rem 2rem;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--contrateCP);
+
+    .line {
+      flex-grow: 1;
+      height: 1px;
+      background: #a972ff;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .about-info {
+    flex: 1;
+    min-width: 300px;
+
+    p,
+    h2,
+    h4 {
+      margin-top: 1rem;
+      color: var(--contrateCP);
+    }
+
+    .tech-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .icon-container {
+
+            
+          position: relative;
+
+          i,
+          .icon-img {
+            font-size: 2rem;
+            width: 38px;
+            height: 38px;
+          }
+
+          .icon-img {
+            object-fit: contain;
+          }
+
+          .icon-text {
+            visibility: hidden;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ccc;
+            padding: 5px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+            font-size: 0.75rem;
+            z-index: 2;
+          }
+
+          &:hover .icon-text {
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+  
+  }
+
+  .about-image {
+    flex: 0 0 300px;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      border-bottom: 2px solid #a972ff;
+    }
+  }
+
+  .line {
+      flex-grow: 1;
+      height: 1px;
+      background: #a972ff;
+      margin-left: 0.5rem;
+    }
+
+
+    .experience-entry {
+  margin-top: 2rem;
+
+  .experience-role {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--contrateCP);
+    margin-bottom: 0.3rem;
+  }
+
+  .experience-company,
+  .experience-date {
+    font-size: 0.95rem;
+    color: var(--color-light-gray);
+    margin-bottom: 0.2rem;
+  }
+
+  .experience-tasks {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    list-style: disc;
+
+    li {
+      color: #fff;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+}
+
