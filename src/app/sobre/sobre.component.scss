@@ -27,7 +27,7 @@
     .line {
       flex-grow: 1;
       height: 1px;
-      background: #a972ff;
+      background: var(--color-white);
       margin-left: 0.5rem;
     }
   }
@@ -113,8 +113,18 @@
     }
 
 
+
+    .ti{
+      h1{
+       max-width: 1200px;
+    margin: 0 auto;
+    }
+    }
     .experience-entry {
-  margin-top: 2rem;
+  max-width: 1200px;
+    margin: 0 auto;
+
+    
 
   .experience-role {
     font-size: 1.2rem;
@@ -139,6 +149,52 @@
       color: #fff;
       margin-bottom: 0.5rem;
       line-height: 1.5;
+    }
+  }
+}
+
+.language-section {
+  text-align: center;
+
+  h1{
+    
+       max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+
+  .languages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .language-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    .language-flag {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .language-name {
+      font-weight: 600;
+      color: var(--color-white);
+      margin: 0;
+    }
+
+    .language-level {
+      color: var(--color-light-gray);
+      font-size: 0.9rem;
+      margin: 0;
     }
   }
 }
