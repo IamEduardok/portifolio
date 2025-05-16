@@ -1,7 +1,24 @@
 <section class="Projects">
+  <h2 class="title-project">Meus Projetos</h2>
+  
+  <!-- Filtro -->
+  <app-filter 
+    [categories]="filterCategories"
+    [selectedCategory]="selectedCategory"
+    (categoryChange)="onCategoryChange($event)">
+  </app-filter>
 
-    <h2 class="title-project">Meus Projetos</h2>
-
-
-
+  <div class="projects-grid">
+  <div *ngFor="let project of filteredProjects" class="project-card" 
+      [style.background-image]="'url(' + project.imageUrl + ')'">
+    <div class="overlay">
+      <h3 class="project-title">{{ project.title }}</h3>
+      <p class="project-subtitle">{{ project.subtitle }}</p>
+      <div class="project-buttons">
+        <a [href]="project.demoUrl" class="btn" target="_blank">Ver</a>
+        <a [href]="project.codeUrl" class="btn" target="_blank">Código</a>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
