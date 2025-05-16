@@ -1,8 +1,10 @@
 .Projects {
+
+  background-color: var(--corPrincipal);
   padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  max-width: auto;
+  
+
 
 .title-project {
   text-align: center;
@@ -80,4 +82,5 @@
   &:hover {
     background: #0056b3;
   }
+}
 }
