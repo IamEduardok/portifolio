@@ -67,20 +67,24 @@
 }
 
 .project-buttons {
-  display: flex;
-  gap: 1rem;
-}
+      display: flex;
+      gap: 1rem;
+     
+      
 
-.btn {
-  padding: 0.5rem 1rem;
-  background: #007bff;
-  color: var(--color-white);
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background 0.3s ease;
+      .btn {
+         border-radius: 6px;
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+        border: 1px solid var(--contrateCP);
+        color: var(--color-white);
+        text-decoration: none;
+        transition: 0.3s;
 
-  &:hover {
-    background: #0056b3;
-  }
-}
+        &:hover {
+          background-color: var(--contrateCP);
+          color: var(--color-black);
+        }
+      }
+    }
 }
