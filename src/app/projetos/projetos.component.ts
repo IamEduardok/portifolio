@@ -64,7 +64,7 @@ export class ProjetosComponent {
       subtitle: 'Um aplicativo web de previsão do tempo que utiliza a API do OpenWeather, que oferece dados meteorológicos precisos e em tempo real, com um design moderno e interativo. Desenvolvido para ser rápido e intuitivo.',
       category: 'frontend',
       imageUrl: 'assets/images/Clima.png',
-      demoUrl: '#',
+      demoUrl: 'https://iameduardok.github.io/Weather-App/',
       codeUrl: 'https://github.com/IamEduardok/Weather-App.git'
     },
     
