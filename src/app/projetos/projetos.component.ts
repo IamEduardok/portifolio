@@ -24,6 +24,7 @@ export class ProjetosComponent {
     { id: 'all', name: 'Todos' },
     { id: 'frontend', name: 'Frontend' },
     { id: 'backend', name: 'Backend' },
+    { id: 'fullstack', name: 'FullStack' },
     
   ];
 
@@ -32,39 +33,39 @@ export class ProjetosComponent {
   projects: Project[] = [
     {
       id: 1,
-      title: 'Projeto 1',
-      subtitle: 'Descrição do projeto 1',
+      title: 'Site StartCine+',
+      subtitle: 'Este projeto foi desenvolvido durante o programa Start <Tech> da Universidade TOTVS, em parceria com a Ada Tech e o Instituto da Oportunidade Social, utilizando o framework Angular.',
       category: 'frontend',
-      imageUrl: 'assets/images/card1.png',
-      demoUrl: '#',
-      codeUrl: '#'
+      imageUrl: 'assets/images/Startcine.png',
+      demoUrl: '/',
+      codeUrl: 'https://github.com/IamEduardok/ProjetoFinal_StartTech.git'
     },
     {
       id: 2,
-      title: 'Projeto 2',
-      subtitle: 'Descrição do gyv 2',
-      category: 'frontend',
-      imageUrl: 'assets/images/card2.png',
+      title: 'Login Autentificado',
+      subtitle: 'Este projeto tem como objetivo demonstrar a construção de um sistema de login com autenticação de usuários utilizando tecnologias modernas de frontend e backend.',
+      category: 'fullstack',
+      imageUrl: 'assets/images/loginpage.png',
       demoUrl: '#',
-      codeUrl: '#'
+      codeUrl: 'https://github.com/IamEduardok/loginpage.git'
     },
     {
       id: 3,
-      title: 'Projeto 3',
-      subtitle: 'Descrição do projeto 3',
+      title: 'Sistema de Vendas',
+      subtitle: 'O Sistema de Gestão de Vendas é uma aplicação Java desenvolvida em modo terminal, utilizando Java puro, com persistência de dados via arquivos CSV, voltada ao gerenciamento de produtos e vendas.',
       category: 'backend',
-      imageUrl: 'assets/images/card3.png',
-      demoUrl: '#',
-      codeUrl: '#'
+      imageUrl: 'assets/images/backend.jpg',
+      demoUrl: 'https://github.com/IamEduardok/Sistema-Vendas.git',
+      codeUrl: 'https://github.com/IamEduardok/Sistema-Vendas.git'
     },
     {
       id: 4,
-      title: 'Projeto smartfit',
-      subtitle: 'usando angular',
+      title: 'Weather App',
+      subtitle: 'Um aplicativo web de previsão do tempo que utiliza a API do OpenWeather, que oferece dados meteorológicos precisos e em tempo real, com um design moderno e interativo. Desenvolvido para ser rápido e intuitivo.',
       category: 'frontend',
-      imageUrl: 'assets/images/card4.png',
+      imageUrl: 'assets/images/Clima.png',
       demoUrl: '#',
-      codeUrl: '#'
+      codeUrl: 'https://github.com/IamEduardok/Weather-App.git'
     },
     
   ];

@@ -14,7 +14,7 @@
 .filter-options button {
   padding: 0.5rem 1rem;
   border: none;
-  background: #f0f0f0;
+  background: var(--color-white);
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -23,9 +23,9 @@
 
 .filter-options button.active {
   background: #007bff;
-  color: white;
+  color: var(--color-white);
 }
 
 .filter-options button:hover:not(.active) {
-  background: #e0e0e0;
+  background: var(--color-white);
 }
