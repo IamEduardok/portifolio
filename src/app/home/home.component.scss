@@ -36,13 +36,13 @@
   text-transform: uppercase;
 }
 
-/* Seção Social Links */
+
 .social-links {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin-top: 2rem;
-}
+
 
 .social-link {
   display: flex;
@@ -59,13 +59,14 @@
   &:hover {
     background-color: rgba(0, 0, 0, 0.2);
     transform: translateY(-3px);
-    color: var(--color-primary); 
+    color: var(--contrateCP); 
   }
 
   i {
     line-height: 1;
   }
   
+}
 }
 
 .social-link {

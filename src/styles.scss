@@ -4,13 +4,7 @@
   --color-gray: rgba(236, 240, 241, 0.7);
   --color-white: #ffffff;
   --color-light-gray: #f3f3f3;
-  --color-dark-gray: #2c3e50;
-  --color-light-blue: #e1f5fe;
  --corlegal: #007f;
-
-  /* Cores principais do site */
-  --color-primary: #0078d4;     /* Azul Microsoft */
-  --color-secondary: #106ebe;
   --corPrincipal: #0E172F;
   --contrateCP: #00BFFE
 ;
@@ -24,9 +18,7 @@
   --spacing-lg: 2rem;
 }
 
-/* ==================== */
-/* ESTILOS GLOBAIS      */
-/* ==================== */
+
 
 body {
   font-family: var(--font-primary);
@@ -35,17 +27,7 @@ body {
   
 }
 
-/* ==================== */
-/* CLASSES UTILITÁRIAS  */
-/* ==================== */
 
-.text-primary {
-  color: var(--color-primary);
-}
-
-.bg-accent {
-  background-color: var(--color-secondary);
-}
 
 
 
