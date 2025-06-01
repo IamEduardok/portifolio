@@ -52,7 +52,7 @@
   height: 40px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.1);
-  color: var(--contrateCP);
+  color: var(--color-white);
   font-size: 1.2rem;
   transition: all 0.3s ease;
 
@@ -203,6 +203,7 @@
     .about-button {
       margin-top: 2rem;
       display: inline-block;
+      border-radius: 6px;
       padding: 0.7rem 1.5rem;
       border: 1px solid var(--contrateCP);
       color: var(--color-white);
@@ -395,7 +396,7 @@
     background-color: var(--contrateCP);
     color: var(--color-white);
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-weight: 500;
     transition: all 0.3s ease;
     border: 2px solid var(--contrateCP);
