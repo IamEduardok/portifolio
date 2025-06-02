@@ -13,13 +13,10 @@ Desenvolvi este portfólio utilizando **Angular** para criar uma experiência di
 
 ## 🛠 Tecnologias Utilizadas
 
-| Frontend           | Ferramentas          | Design           |
-|--------------------|----------------------|------------------|
-| Angular 17+        | VS Code              | Figma            |
-| SCSS / CSS3        | Git & GitHub         |                  |
-| TypeScript         | Git Bash             |                  |
-| Angular Router     |                      |                  |
-| Angular Animations |                      |                  |
+- [VS Code](https://code.visualstudio.com/) | IDE principal com extensões para Angular, ESLint e Debugging
+- [Git Bash](https://git-scm.com/downloads) | Terminal otimizado para controle de versionamento com Git
+- [Figma](https://www.figma.com/) | Prototipação de UI/UX e design system do projeto
+- [Angular](https://angular.io/) | Framework com Componentes, Injeção de Dependência e Router
 
 ---
 
