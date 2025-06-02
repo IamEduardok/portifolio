@@ -1,7 +1,7 @@
 # 📚 Portfólio 
 
 **Projeto:** Meu Portfólio Pessoal  
-**Live Preview:** [https://iameduardok.github.io/portifolio/]()   
+**Live Preview:** [[https://iameduardok.github.io/portifolio/]()   
 
 ---
 
