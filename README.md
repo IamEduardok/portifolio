@@ -1,6 +1,6 @@
 # 📚 Portfólio 
 
-![alt text](/portifolio/src/assets/images/site.png/)
+![alt text](/src/assets/images/site.png/)
 ---
 
 ## 💻 Sobre o Projeto
