@@ -60,6 +60,6 @@ Desenvolvi este portfólio utilizando **Angular** para criar uma experiência di
       ```bash
       http://localhost:4200
       ```
----
+
 
       <div align="center"> <sub>Desenvolvido com ❤️ por  <a href="https://github.com/IamEduardok">Eduardo</a></sub><br> 
